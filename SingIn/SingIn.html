@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Investware</title>
+    <link rel="stylesheet" href="SingInStyle.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a href="../Index/Index.html" id="btninvest">Investware</a></label>
+        <ul>
+            <li><a class="active" href="../Index/Index.html">Voltar</a></li>
+        </ul>
+    </nav>
+
+    <section class="form-section">
+  
+        <div class="form-wrapper">
+            <form>
+                
+                <div class="texto-simples" id="texto-simples">
+                  <label>Acesse sua conta Investware</label>
+                </div>
+                
+                <div class="input-block">
+                    <label for="login-user">Usuário</label>
+                    <input type="text" id="login-user" required/>
+                </div>
+                
+                <div class="input-block">
+                    <label for="login-password">Senha</label>
+                    <input type="password" id="login-password" required/>
+                </div>
+
+                    <button type="submit" class="btn-login">Entrar</button>
+
+                <div class="input-block">
+                    <label class="text-bottom">Ainda não tem uma conta? <a href="../SingUp/SingUp.html" class="cadastre">Cadastre-se</a></label>
+                </div>
+
+            </form>
+        </div>
+      </section>
+  
+      <script src="SingIn.js"></script>
+</body>
+</html>
