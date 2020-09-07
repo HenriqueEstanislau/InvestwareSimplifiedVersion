@@ -145,3 +145,46 @@ a.active:hover{
 #res {
     margin: 150px;
 }
+
+/*
+IMAGEM
+*/
+
+section.image{
+    margin: 10vh 0;
+    margin-top: 20vh;
+    display: flex;
+    justify-content: center;
+}
+
+section.image img{
+    height: 50%;
+    width: 50%;
+}
+
+/*Texto*/
+section.text{
+    margin: 20vh 30vh;
+}
+
+section.text div.about p{
+    font-size: 2.2rem;
+    line-height: 6vh;
+    margin: 5vh 0;
+}
+.dream-text h1{
+    font-family: "Rubik", sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+/*Imagem e texto*/
+@media (max-width: 943px){
+    section.image img{
+        height: 90%;
+        width: 90%;
+    }
+    section.text{
+        margin: 15vh 3vh;
+    }
+}
