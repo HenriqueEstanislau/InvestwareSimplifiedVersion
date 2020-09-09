@@ -132,13 +132,32 @@ a.active:hover{
 @media (max-width: 400px){
     label.logo{
         font-size: 30px;
-        padding-left: 20px;
+        margin-left: 20px;
+        padding-left: 0;
     }
 }
 @media (max-width: 360px){
     label.logo{
         font-size: 30px;
-        padding-left: 20px;
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    label.checkbtn{
+        margin-right: 10px;
+        padding-right: 0;
+    }
+}
+@media (max-width: 320px){
+    label.logo{
+        font-size: 30px;
+        margin-left: 10px;
+        padding-left: 0;
+        margin-right: 5px;
+        padding-right: 5px;
+    }
+    label.checkbtn{
+        margin-right: 10px;
+        padding-right: 0;
     }
 }
 /* 
@@ -221,17 +240,17 @@ section .card .container p{
 }
 .dream{
     background: white;
-    margin-bottom: 20vh;
-    margin-top: 20vh;
+    margin-bottom: 13rem;
+    margin-top: 0;
 }
 
 .dream-text{
-    margin-top: 20vh;
+    margin-top: 13rem;
 }
 
 .dream-text p{
     font-size: 2.5rem;
-    line-height: 6vh;
+    line-height: 4rem;
 }
 .dream-text h1{
     font-family: "Rubik", sans-serif;
