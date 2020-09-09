@@ -151,8 +151,8 @@ IMAGEM
 */
 
 section.image{
-    margin: 10vh 0;
-    margin-top: 20vh;
+    margin: 10rem 0;
+    margin-top: 15rem;
     display: flex;
     justify-content: center;
 }
@@ -164,13 +164,13 @@ section.image img{
 
 /*Texto*/
 section.text{
-    margin: 20vh 30vh;
+    margin: 10rem 20rem;
 }
 
 section.text div.about p{
     font-size: 2.2rem;
-    line-height: 6vh;
-    margin: 5vh 0;
+    line-height: 3.6rem;
+    margin: 4rem 0;
 }
 .dream-text h1{
     font-family: "Rubik", sans-serif;
@@ -185,6 +185,6 @@ section.text div.about p{
         width: 90%;
     }
     section.text{
-        margin: 15vh 3vh;
+        margin: 15rem 3rem;
     }
 }
