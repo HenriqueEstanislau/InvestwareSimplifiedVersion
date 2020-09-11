@@ -1,7 +1,9 @@
 # Investware Simplified Version
 
-## Notes
+## Notes :notebook_with_decorative_cover::books:
 - This is just the CSS and Javascript of the project
-- You can see this version in <https://henriqueestanislau.github.io/InvestwareSimplifiedVersion/Index/Index.html>
+- Limited version
+- You can see this simplified version by clicking [here](https://henriqueestanislau.github.io/InvestwareSimplifiedVersion/Index/Index.html)
+
 
 
