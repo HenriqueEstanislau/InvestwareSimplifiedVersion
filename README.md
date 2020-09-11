@@ -6,14 +6,14 @@
 - You can see this simplified version by clicking [here](https://henriqueestanislau.github.io/InvestwareSimplifiedVersion/Index/Index.html)
 
 ## To do list :bar_chart::clipboard:
--[x] Landing page
--[x] Sing In
--[x] Sing up
--[] Simulation
- -[] Chart
- -[x] Questions
--[x] About 
--[] Education
+- [x] Landing page
+- [x] Sing In
+- [x] Sing up
+- [] Simulation
+ - [] Chart
+ - [x] Questions
+- [x] About 
+- [] Education
 
 
 
