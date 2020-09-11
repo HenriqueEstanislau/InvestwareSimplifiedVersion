@@ -10,10 +10,7 @@
 - [x] Sing In
 - [x] Sing up
 - [] Simulation
- - [] Chart
- - [x] Questions
-- [x] About 
+- [] Chart
+- [x] About
 - [] Education
-
-
-
+- [] Terms of Use
