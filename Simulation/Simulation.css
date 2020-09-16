@@ -405,6 +405,7 @@ Gráfico
 @media (max-width: 400px){
     .simulation-info .chart-container{
         width: 350px;
+        height: 200px;
     }
 
     .simulation-info .chart-text p {
