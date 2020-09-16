@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Investware</title>
+    <title>Simulação Investware</title>
     <link rel="stylesheet" href="Simulation.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css" />
+
 </head>
 <body>
     <nav>
@@ -22,5 +25,94 @@
         </ul>
     </nav>
 
+    <section class="main-text" id="main-form">
+        <p class="title">Simulador de investimentos</p>
+        <p class="subtitle">Descubra qual a melhor carteira de investimentos para você</p>
+        <!-- <input type="button" value="clica" onclick="conservador()"> -->
+        <!-- <hr class="divisor"> -->
+        <div class="quest" id="quest">
+            <form>
+                <p class="questions">1- Qual o seu objetivo?</p>
+                <div class="quest">
+                    <label for="btnInflacao">
+                        <input type="radio" class="rendimentos" name="rendimentos" id="btnInflacao">
+                        Quero ganhos constantes acima da inflação
+                    </label>
+    
+                    <label for="btnLongoPrazo">
+                        <input type="radio" class="rendimentos" name="rendimentos" id="btnLongoPrazo">
+                        Quero maiores rendimentos a longo prazo
+                    </label>
+    
+                    <label for="btnRiscos">
+                        <input type="radio" class="rendimentos" name="rendimentos" id="btnRiscos">
+                        Aceito riscos para maximizar ganhos
+                    </label>
+                </div>
+                
+
+                <p class="questions">2 - Quanto deseja investir?</p>
+
+                <div class="qtd">
+                    <input type="range" min="1" max="100" value="30" class="slider" id="rangeSlider">
+                    <div class="money" id="money">
+                        R$: ?
+                    </div>
+                </div>
+
+                <p class="questions">3 - Quando pretende resgatar?</p>
+
+                <div class="quest">
+                    <label for="btn1ano">
+                        <input type="radio" class="tempo" name="tempo" id="btn1ano">
+                        Em até 1 ano
+                    </label>
+                    <label for="btn2anos">
+                        <input type="radio" class="tempo" name="tempo" id="btn2anos">
+                        Entre 1 e 2 anos
+                    </label>
+
+                    <label for="btn3anos">
+                        <input type="radio" class="tempo" name="tempo" id="btn3anos">
+                        Mais de 2 anos
+                    </label>
+                </div>
+
+            </form>
+            <div class="envio">
+                <button type="submit" class="btnsimulate" id="simular" onclick="verificar()">Simular</button>
+            </div>            
+        </div>
+    </section>
+
+    <section class="chart" id="chart">
+
+        <div class="simulation-info">
+
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+            </div>
+
+            <div class="chart-text" id="chart-text">
+                <div id="categoria"></div>
+                <div id="porcentagem"></div>
+                <div id="valor"></div>
+            </div>
+        </div>
+
+        <div class="subtitle">
+            <p>O gráfico de rentabilidade apresentado foi gerado utilizando a nossa Carteira</p>
+            <p>Recomendada compatível com o perfil Moderado. Acesse nossa plataforma de </p>
+            <p>conteúdos para saber mais detalhes sobre os produtos que compõem esta carteira. </p>
+            <p>O perfil Moderado não necessariamente será o seu perfil de investidor.</p>
+            <p>Para avaliação completa do seu perfil de investidor, preencha integralmente</p>
+            <p>o questionário de suitability no ato da abertura de sua conta.</p>     
+        </div>
+    </section>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.js"></script>
+    <script src="Simulation.js"></script>
 </body>
 </html>
