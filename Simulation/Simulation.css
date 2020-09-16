@@ -16,6 +16,7 @@ body{
 }
 
 nav{
+    z-index: 1;
     background: #FFFFFF; /*062F4F F0F0F5*/
     height: 80px;
     width: 100%;
@@ -140,4 +141,290 @@ a.active:hover{
         font-size: 30px;
         padding-left: 20px;
     }
+}
+
+/*
+Button
+*/
+
+.quest{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.main-text .quest label{
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+section.main-text{
+    padding: 50px 80px;
+}
+
+section.main-text .title{
+    font-size: 3rem;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-style: normal;
+    margin-top: 10rem;
+}
+section.main-text p{
+    font-size: 2rem;
+}
+section.main-text .subtitle{
+    margin: 20px 2px;
+}
+
+section.main-text .divisor{
+    margin-bottom: 70px;
+}
+
+section.main-text .questions{
+    margin: 40px 10px;
+}
+
+section.main-text .money{
+    font-size: 5rem;
+    margin: 4rem;
+}
+
+section.main-text .qtd{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+}
+
+/*
+SLIDER
+*/
+.slider {
+    margin: 0px 4rem;
+    background-color: transparent;
+    cursor: pointer;
+    width: 50rem;
+    padding: 0;
+}
+
+.slider:after {
+    background-color: #fff;
+}
+
+.slider:hover{
+    background: #26d1a4;
+}
+
+.envio{
+    display: flex;
+    justify-content: center;
+}
+
+.btnsimulate{
+    padding: 12px 70px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    background: #26d1a4;
+    text-decoration: none;
+    outline: none;
+    border: solid;
+    border-color: #1eb990;
+    border-radius: 8px;
+    border-width: 1.5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btnsimulate:hover{
+    background: #1ca07d; 
+}
+/*
+Gráfico
+*/
+
+.simulation-info{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.simulation-info .chart-container{
+    position: relative;
+    height: 300px;
+    width: 630px;
+    margin: 0rem 1rem 1rem 4rem;
+}
+
+@media (max-width: 1326px){
+    .simulation-info .chart-container{
+        width: 600px;
+    }
+}
+
+@media (max-width: 1295px){
+    .simulation-info .chart-container{
+        width: 550px;
+    }
+}
+
+@media (max-width: 1240px){
+    .simulation-info .chart-container{
+        width: 500px;
+    }
+}
+
+@media (max-width: 1181px){
+    .simulation-info .chart-container{
+        width: 450px;
+    }
+}
+
+/*1133*/
+@media (max-width: 1133px){
+    .simulation-info .chart-container{
+        width: 550px;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .simulation-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .simulation-info .chart-text{
+        position: relative;
+        margin: 0rem auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+/* TEXTO DO GRAFICO*/
+.simulation-info .chart-text{
+    position: relative;
+    margin: 0rem 0.5rem 1rem 4vw;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.simulation-info .chart-text p{
+    font-size: 2.6rem;
+}
+
+.simulation-info .chart-text #categoria,
+.simulation-info .chart-text #porcentagem,
+.simulation-info .chart-text #valor{
+ margin: 0 20px;
+}
+
+@media (max-width: 850px){
+    .simulation-info .chart-container{
+        width: 500px;
+    }
+
+    .simulation-info .chart-text p {
+        font-size: 2rem;
+    }
+
+    section.main-text .qtd{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .slider {
+        margin: 0px 4rem;
+        background-color: transparent;
+        cursor: pointer;
+        width: 35rem;
+        padding: 0;
+    }
+    section.main-text .money{
+        font-size: 5rem;
+        margin: 2rem;
+        order: -1;
+    }
+}
+
+@media (max-width: 630px){
+    .simulation-info .chart-container{
+        width: 450px;
+        margin: 0 20px;
+    }
+
+    .simulation-info .chart-text p {
+        font-size: 2rem;
+    }
+    .simulation-info .chart-text #categoria,
+    .simulation-info .chart-text #porcentagem,
+    .simulation-info .chart-text #valor{
+    margin: 0 5px;
+    }    
+}
+
+@media (max-width: 500px){
+    section.main-text .title{
+        margin-top: 6rem;
+    }
+    section.main-text .subtitle{
+        margin: 10px 2px;
+    }
+    section.main-text{
+        padding: 50px 10px;
+    }
+
+    section.main-text .money{
+        font-size: 4rem;
+        margin: 3rem auto;
+    }
+}
+
+@media (max-width: 440px){
+    .simulation-info .chart-container{
+        width: 430px;
+    }
+
+    .simulation-info .chart-text p {
+        font-size: 2rem;
+    }
+    .simulation-info .chart-text #categoria,
+    .simulation-info .chart-text #porcentagem,
+    .simulation-info .chart-text #valor{
+    margin: 0 5px;
+    } 
+}
+
+@media (max-width: 400px){
+    .simulation-info .chart-container{
+        width: 350px;
+    }
+
+    .simulation-info .chart-text p {
+        font-size: 1.7rem;
+    }
+    .simulation-info .chart-text #categoria,
+    .simulation-info .chart-text #porcentagem,
+    .simulation-info .chart-text #valor{
+    margin: 0 5px;
+    } 
+
+    .slider {
+        margin: 0px 1rem;
+        background-color: transparent;
+        cursor: pointer;
+        width: 30rem;
+    }
+}
+
+.subtitle{
+    font-size: 1.3rem;
+    margin: 1rem 1rem 10rem 5rem;  
 }
