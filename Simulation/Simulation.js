@@ -18,7 +18,8 @@ function verificar(){
     try {
         //habilita o gráfico e desabilita as perguntas (deve ser colocado no começo para ter o efeito de animação no chart.js)
         document.getElementById('chart').style.display = "inline";
-        document.getElementById('quest').style.display = "none";   
+        document.getElementById('quest').style.display = "none"; 
+        window.location.href = "#title"
 
         //faz uma verificação no questionário para ver se todos os campos foram preenchidos
         var rendimentos = document.getElementsByClassName("rendimentos")
