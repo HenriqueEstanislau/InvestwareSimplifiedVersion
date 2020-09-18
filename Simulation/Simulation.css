@@ -133,19 +133,40 @@ a.active:hover{
 @media (max-width: 400px){
     label.logo{
         font-size: 30px;
-        padding-left: 20px;
+        margin-left: 20px;
+        padding-left: 0;
     }
 }
-@media (max-width: 360px){
+@media (max-width: 359px){
     label.logo{
         font-size: 30px;
-        padding-left: 20px;
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    label.checkbtn{
+        margin-right: 10px;
+        padding-right: 0;
     }
 }
-
+@media (max-width: 320px){
+    label.logo{
+        font-size: 30px;
+        margin-left: 10px;
+        padding-left: 0;
+        margin-right: 5px;
+        padding-right: 5px;
+    }
+    label.checkbtn{
+        margin-right: 10px;
+        padding-right: 0;
+    }
+}
 /*
 Button
 */
+.XPI:hover{
+    background: #FFFFFF;
+}
 
 .quest{
     display: flex;
@@ -172,8 +193,19 @@ section.main-text .title{
 section.main-text p{
     font-size: 2rem;
 }
-section.main-text .subtitle{
-    margin: 20px 2px;
+
+.subtitle-chart{
+    font-size: 1.3rem;
+    margin: 1rem 1rem 2rem 5rem;  
+}
+
+.btnChart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+
+    margin: 0 175px;
 }
 
 section.main-text .divisor{
@@ -239,6 +271,42 @@ SLIDER
     background: #1ca07d; 
 }
 /*
+Botão "Simular Novamente"
+*/
+.simularNovamente{
+    margin: 1px;
+    padding: 12px 40px;
+
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    background: #26d1a4;
+    text-decoration: none;
+    outline: none;
+
+    border: solid;
+    border-color: #1eb990;
+    border-radius: 8px;
+    border-width: 1.5px;
+    
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.simularNovamente:hover{
+    background: #1ca07d; 
+}
+
+/*
+    text-chart-info
+*/
+.text-chart-info{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin: 2rem auto;
+}
+/*
 Gráfico
 */
 
@@ -264,12 +332,14 @@ Gráfico
 @media (max-width: 1295px){
     .simulation-info .chart-container{
         width: 550px;
+        height: 300px;
     }
 }
 
 @media (max-width: 1240px){
     .simulation-info .chart-container{
         width: 500px;
+        height: 270px;
     }
 }
 
@@ -281,8 +351,17 @@ Gráfico
 
 /*1133*/
 @media (max-width: 1133px){
+
+    section.main-text .chart{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .simulation-info .chart-container{
         width: 550px;
+        height: 300px;
         display: flex;
         justify-content: center;
         margin: 0 auto;
@@ -303,6 +382,24 @@ Gráfico
         justify-content: center;
         flex-direction: column;
     }
+    .text-chart-info{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 2rem 18rem;
+    }
+    .btnChart{
+        margin: 20px 10px;
+    }
+    .subtitle-chart{
+        margin: 0rem auto;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        line-height: 20px;
+    }
+    
 }
 
 /* TEXTO DO GRAFICO*/
@@ -318,11 +415,20 @@ Gráfico
 .simulation-info .chart-text p{
     font-size: 2.6rem;
 }
+.simulation-info .chart-text #porcentagem{
+    text-align: right;
+}
+
+.small-title{
+    margin-bottom: 12px;
+    color: darkgrey;
+}
 
 .simulation-info .chart-text #categoria,
 .simulation-info .chart-text #porcentagem,
 .simulation-info .chart-text #valor{
  margin: 0 20px;
+ line-height: 4.2rem;
 }
 
 @media (max-width: 850px){
@@ -352,6 +458,9 @@ Gráfico
         margin: 2rem;
         order: -1;
     }
+    .text-chart-info{
+        margin: 2rem 10rem;
+    }
 }
 
 @media (max-width: 630px){
@@ -367,7 +476,14 @@ Gráfico
     .simulation-info .chart-text #porcentagem,
     .simulation-info .chart-text #valor{
     margin: 0 5px;
-    }    
+    }
+  
+}
+
+@media (max-width: 549px){
+    .text-chart-info{
+        margin: 2rem 3rem;
+    }
 }
 
 @media (max-width: 500px){
@@ -384,6 +500,16 @@ Gráfico
     section.main-text .money{
         font-size: 4rem;
         margin: 3rem auto;
+    }
+    .simulation-info .chart-container{
+        width: 450px;
+        height: 270px;
+        margin: 0 0px;
+    }
+
+    .text-chart-info{
+        display: flex;
+        margin: 2rem 2rem;
     }
 }
 
@@ -407,6 +533,9 @@ Gráfico
         width: 350px;
         height: 200px;
     }
+    section.main-text .title{
+        font-size: 2.6rem;
+    }
 
     .simulation-info .chart-text p {
         font-size: 1.7rem;
@@ -423,9 +552,4 @@ Gráfico
         cursor: pointer;
         width: 30rem;
     }
-}
-
-.subtitle{
-    font-size: 1.3rem;
-    margin: 1rem 1rem 10rem 5rem;  
 }
