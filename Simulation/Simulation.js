@@ -51,7 +51,7 @@ function verificar(){
         
         function calculoValor(porcentagem){
             var apareceTela = document.getElementById("valor")
-            apareceTela.innerHTML = `<p>Valor:</p><br>`
+            apareceTela.innerHTML = `<p class='small-title'>Valor</p>`
 
             var total = slider.value * 1000
             var valorFinal = 0
@@ -59,12 +59,12 @@ function verificar(){
             for(var j in porcentagem){
                 percent = porcentagem[j]/100
                 valorFinal = total * percent
-                apareceTela.innerHTML += `<p> R$ ${valorFinal.toFixed(2)} </p>`
+                apareceTela.innerHTML += `<p>${valorFinal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</p>`
             }
 
             var porcentagemTela = document.getElementById("porcentagem")
             var valorPorcentagem = 0
-            porcentagemTela.innerHTML += `<p>Alocação</p><br>`
+            porcentagemTela.innerHTML += `<p class='small-title'>Alocação</p>`
             for(var k in porcentagem){
                 valorPorcentagem = porcentagem[k]
                 porcentagemTela.innerHTML += `<p>${valorPorcentagem}%</p>`
@@ -76,7 +76,7 @@ function verificar(){
         //escreve no HTML os dados da categoria, porcentagem e valor
         function imprimir(perfilName, perfilData, slider){
             var res = document.querySelector('div#categoria')
-            res.innerHTML += "<p>Categoria</p><br>"
+            res.innerHTML += "<p class='small-title'>Categoria</p>"
             for (var i in perfilName){
                 res.innerHTML += `<p>${perfilName[i]}</p>`
             }
