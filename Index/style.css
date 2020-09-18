@@ -261,9 +261,46 @@ section .card .container p{
 footer{
     background-color: #dfdfdf;
     padding: 30px;
-    font-size: 25px;
+    font-size: 1.8rem;
     text-align: center;
     color: black;
+}
+footer div.footer-text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+}
+footer div.footer-text div.priv a{
+    background: #dfdfdf;
+    color: black;
+}
+
+footer div.footer-text div.priv a:hover{
+    background: #b4b4b4;
+    color: rgb(0, 0, 0);
+}
+
+footer div.footer-text div.priv{
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    justify-content: left;
+}
+
+footer div.footer-text div.copy,
+footer div.footer-text div.reserv,
+footer div.footer-text div.priv{
+    margin: 1.5rem;
+}
+
+@media (max-width: 600px){
+    footer div.footer-text{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 943px) {
