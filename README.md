@@ -21,4 +21,4 @@
 - [ ] Chart
 - [x] About
 - [ ] Education
-- [ ] Terms of Use
+- [x] Terms of Use
