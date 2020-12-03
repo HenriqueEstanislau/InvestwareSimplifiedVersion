@@ -17,8 +17,8 @@
 - [x] Landing page
 - [x] Sing In
 - [x] Sing up
-- [ ] Simulation
-- [ ] Chart
+- [x] Simulation
+- [x] Chart
 - [x] About
 - [ ] Education
 - [x] Terms of Use
