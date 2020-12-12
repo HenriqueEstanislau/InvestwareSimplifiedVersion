@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação Investware</title>
+    <link rel="stylesheet" href="Education.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><a href="../Index/Index.html" id="btninvest">Investware</a></label>
+        <ul>
+            <li><a href="../About/About.html">Sobre</a></li>
+            <li><a href="../Education/Education.html">Educação</a></li>
+            <li><a href="../Simulation/Simulation.html">Simular</a></li>
+            <li><a class="active" href="../SingIn/SingIn.html">Entrar</a></li>
+        </ul>
+    </nav>
+
+    <section class="titles">
+        <div class="main-title">
+            <h1>Em Destaque</h1>
+        </div>
+    </section>
+    <section class="cards-area">
+        
+        <div class="slider owl-carousel">
+
+            <div class="card">
+                <div class="img"><img src="Imagem1.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Quais são os primeiros passos essenciais?<br><br></div>
+                    <div class="btn">
+                        <button>Leia mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="Imagem2.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Descubra os erros mais comuns ao montar sua carteira de ações!</div>
+                    <div class="btn">
+                        <button>Leia mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="Imagem3.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Quais são os primeiros passos essenciais?<br><br></div>
+                    <div class="btn">
+                        <button>Leia mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="Imagem4.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Descubra os erros mais comuns ao montar sua carteira de ações!</div>
+                    <div class="btn">
+                        <button>Leia mais</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><img src="Imagem5.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Quais são os primeiros passos essenciais?<br><br></div>
+                    <div class="btn">
+                        <button>Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="titles2">
+        <div class="main-title">
+            <h1>Como Começar</h1>
+        </div>
+    </section>
+    <section class="cards-area">
+        
+        <div class="slider owl-carousel">
+
+            <div class="card">
+                <div class="img"><img src="Imagem1.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Quais são os primeiros passos essenciais?<br><br></div>
+                    <div class="btn">
+                        <button>Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="img"><img src="Imagem2.jpg" alt=""></div>
+                <div class="content">
+                    <div class="title">Descubra os erros mais comuns ao montar sua carteira de ações!</div>
+                    <div class="btn">
+                        <button>Leia mais</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <script>
+        $(".slider").owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000, //2000ms = 2s
+            autoplayHoverPause: true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                }
+            }
+        });
+    </script>
+
+    <script src="teste.js"></script>
+</body>
+</html>

@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    /* a cada 1rem será considera 10px */
+    font-size: 62.5%;
+}
+
+body{
+    font-family: montserrat;
+}
+
+nav{
+    z-index: 999;
+    position: absolute;
+    background: #FFFFFF; /*062F4F F0F0F5*/
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+label.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+label.logo a{
+    color: black;
+}
+
+label.logo a:hover{
+    background: none;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color:black;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #20E0B1; /*1b9bff*/
+    transition: .5s;
+}
+
+a.active:hover{
+    background-color: #20E0B1; /*64bcff*/
+    transition: .5s;
+    color: white;
+}
+.checkbtn{
+    font-size: 30px;
+    color: black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 1147px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 943px){
+    .checkbtn{
+        display: block;
+    }
+
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #f5f5f5;/**/
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background: none;
+        color: #22eebb;/*0082e6*/
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .main-text{
+        margin: inherit;
+    }
+
+}
+@media (max-width: 400px){
+    label.logo{
+        font-size: 30px;
+        margin-left: 20px;
+        padding-left: 0;
+    }
+}
+@media (max-width: 359px){
+    label.logo{
+        font-size: 30px;
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    label.checkbtn{
+        margin-right: 10px;
+        padding-right: 0;
+    }
+}
+@media (max-width: 320px){
+    label.logo{
+        font-size: 30px;
+        margin-left: 10px;
+        padding-left: 0;
+        margin-right: 5px;
+        padding-right: 5px;
+    }
+    label.checkbtn{
+        margin-right: 10px;
+        padding-right: 0;
+    }
+}
+/*
+===========================================
+                    TITULOS
+===========================================
+
+*/
+
+section.titles{
+    margin-top: 15rem;
+    font-size: 18px;
+    display: flex;
+    margin-left: 5%;
+}
+
+section.titles2{
+    margin-top: 8rem;
+    font-size: 18px;
+    display: flex;
+    margin-left: 5%;
+}
+
+
+@media (min-width: 1800px){
+    section.titles{
+        margin-left: 15%;
+    }
+}
+
+@media (min-width: 2100px){
+    section.titles{
+        margin-left: 25%;
+    }
+}
+
+/*
+===========================================
+                    CARDS
+===========================================
+
+*/
+
+html,body{
+    background: #f2f2f2;
+}
+
+.cards-area{
+    display: grid;
+    height: 100%;
+    place-items: center;
+    text-align: center;
+    margin-top: 3rem;
+}
+.slider{
+    max-width: 1150px;/*1150px*/
+    display: flex;
+}
+.slider .card{
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+}
+
+.slider .card .img{
+    height: 200px;
+    width: 100%;
+}
+
+.slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider .card .content{
+    padding: 10px 20px;
+}
+
+.card .content .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.card .content .btn{
+    display: block;
+    text-align: left;
+    margin: 20px 0;
+}
+.card .content .btn button{
+    background: #1bc399;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card .content .btn button:hover{
+    transform: scale(0.94);
+}
+
+@media (max-width: 500px){
+    .slider{
+        min-width: 250px;/*1150px*/
+        display: flex;
+    }
+    .slider .card{
+        flex: 1;
+        margin: 0 10px;
+        background: #fff;
+    }
+    
+    .slider .card .content{
+        padding: 10px 20px;
+    }
+    
+}
