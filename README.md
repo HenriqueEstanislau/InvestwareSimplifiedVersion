@@ -1,17 +1,9 @@
 # Investware Simplified Version
+The objective of the project is to create a platform for studies on investments and personal finance to assist and guide people who want to have a greater organization and increase their capital.
 
 ## Notes :notebook_with_decorative_cover::books:
-- This is just the CSS and Javascript of the project
-- Limited version
+- Limited version - This is just the CSS and Javascript of the project, so some functions may not work
 - You can see this simplified version by clicking [here](https://henriqueestanislau.github.io/InvestwareSimplifiedVersion/Index/Index.html)
-
-## Objective :white_check_mark:
-- Investware is a platform for studies on investments and personal finance
-
-## Languages:computer:
-- HTML
-- CSS
-- JavaScript
 
 ## To do list :bar_chart::clipboard:
 - [x] Landing page
