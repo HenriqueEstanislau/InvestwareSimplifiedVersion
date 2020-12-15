@@ -57,7 +57,7 @@ inicializarCards = () => {
             <div class="content">
                 <div class="title">${valor.titulo}<br><br></div>
                 <div class="btn">
-                    <a href="${valor.pagina}">Leia mais</a>
+                    <button onclick="window.location.href = '${valor.pagina}'">Leia mais</button>
                 </div>
             </div>
         </div>
@@ -72,7 +72,7 @@ inicializarCards = () => {
             <div class="content">
                 <div class="title">${valor.titulo}<br><br></div>
                 <div class="btn">
-                    <a href="${valor.pagina}">Leia mais</a>
+                    <button onclick="window.location.href = '${valor.pagina}'">Leia mais</button>
                 </div>
             </div>
         </div>
