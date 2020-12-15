@@ -265,10 +265,6 @@ html,body{
     transition: 0.2s;
 }
 
-.card .content .btn a:hover{
-    transform: scale(0.94);
-}
-
 @media (max-width: 500px){
     .slider{
         min-width: 250px;/*1150px*/
