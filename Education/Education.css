@@ -253,7 +253,7 @@ html,body{
     text-align: left;
     margin-bottom: 80%;
 }
-.card .content .btn a{
+.card .content .btn button{
     background: #1bc399;
     color: #fff;
     border: none;
@@ -263,6 +263,10 @@ html,body{
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s;
+}
+
+.card .content .btn button:hover{
+    transform: scale(0.94);
 }
 
 @media (max-width: 500px){
