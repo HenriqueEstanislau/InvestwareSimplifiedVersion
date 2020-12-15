@@ -185,13 +185,15 @@ section.titles2{
 
 
 @media (min-width: 1800px){
-    section.titles{
+    section.titles,
+    section.titles2{
         margin-left: 15%;
     }
 }
 
 @media (min-width: 2100px){
-    section.titles{
+    section.titles,
+    section.titles2{
         margin-left: 25%;
     }
 }
@@ -222,6 +224,7 @@ html,body{
     flex: 1;
     margin: 0 10px;
     background: #fff;
+    height: 370px;
 }
 
 .slider .card .img{
@@ -248,9 +251,9 @@ html,body{
 .card .content .btn{
     display: block;
     text-align: left;
-    margin: 20px 0;
+    margin-bottom: 80%;
 }
-.card .content .btn button{
+.card .content .btn a{
     background: #1bc399;
     color: #fff;
     border: none;
@@ -262,7 +265,7 @@ html,body{
     transition: 0.2s;
 }
 
-.card .content .btn button:hover{
+.card .content .btn a:hover{
     transform: scale(0.94);
 }
 
