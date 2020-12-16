@@ -245,7 +245,14 @@ html,body{
 .card .content .title{
     font-size: 20px;
     font-weight: 600;
+    height: 100px;
     text-align: left;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /** número de linhas que você quer exibir */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card .content .btn{
@@ -253,6 +260,7 @@ html,body{
     text-align: left;
     margin-bottom: 80%;
 }
+
 .card .content .btn button{
     background: #1bc399;
     color: #fff;
@@ -285,3 +293,65 @@ html,body{
     }
     
 }
+
+/*
+===========================================
+                    BANNER
+===========================================
+*/
+
+/* section.banner{
+    background: #0a5845;
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+section.banner .banner-image,
+section.banner .banner-text,
+section.banner .banner-button{
+    margin: 0px 40px;
+}
+section.banner .banner-image img{
+    height: 100px;
+    width: 100px;
+}
+section.banner .banner-text h1{
+    color: #fff;
+    font-size: 40px;
+}
+section.banner .banner-text h2{
+    color: #f2f2f2;
+    font-size: 28px;
+}
+section.banner .banner-button button{
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 70px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+@media (max-width: 1220px){
+    section.banner{
+        width: 1000px;
+    }
+}
+@media (max-width: 1000px){
+    section.banner{
+        width: 900px;
+    }
+}
+@media (max-width: 500px){
+    section.banner{
+        width: 300px;
+        padding: 30px auto;
+        flex-direction: column;
+    }
+} */
