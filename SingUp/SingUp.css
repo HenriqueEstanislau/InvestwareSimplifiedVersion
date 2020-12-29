@@ -48,7 +48,7 @@ form .input-block input {
     margin-top: 6px;
     padding: 10px;
     font-size: 20px;
-    color: #20E0B1;
+    color: #181818;
     border-radius: 2px;
     border: 1px solid #ccddef;
     outline-color: #20E0B1;
@@ -90,6 +90,37 @@ form .btn-singup:hover{
     font-family: Verdana, sans-serif, bold;
 }
 
+/*
+  []=======================================[]
+    Arrumando o tamanho do form para mobile
+  []=======================================[]
+*/
+
+@media (max-width: 400px){
+    form {
+        padding: 5px 10% 15px 10%;
+        border-radius: 5px;
+    }
+    form .input-block label {
+        font-size: 16px;
+        color: rgb(24, 23, 27);
+    }
+
+    form .btn-singup {
+        display: block;
+        align-items: center;
+        text-align: center;
+        min-width: 100px;
+
+        margin-top: 50px;
+        margin-bottom: 45px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px 60px;
+        font-size: 18px;
+        outline-style: none;
+    }
+}
 
 
 /*
@@ -116,7 +147,7 @@ body{
 }
 
 nav{
-    background: #ffffff; /*#091827 #1E1F21*/
+    background: #FFFFFF; /*062F4F F0F0F5*/
     height: 80px;
     width: 100%;
     position: fixed;
@@ -154,7 +185,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color:white;
+    color:black;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -162,12 +193,12 @@ nav ul li a{
 }
 
 a.active,a:hover{
-    background: #20E0B1;
+    background: #20E0B1; /*1b9bff*/
     transition: .5s;
 }
 
 a.active:hover{
-    background-color: #26ffc9;
+    background-color: #20E0B1; /*64bcff*/
     transition: .5s;
     color: white;
 }
@@ -191,6 +222,7 @@ a.active:hover{
     nav ul li a{
         font-size: 16px;
     }
+    
 }
 
 @media (max-width: 943px){
@@ -202,7 +234,7 @@ a.active:hover{
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #f0f0f0;
+        background: #f5f5f5;/**/
         top: 80px;
         left: -100%;
         text-align: center;
@@ -218,21 +250,44 @@ a.active:hover{
     }
     a:hover, a.active{
         background: none;
-        color: #20E0B1;
+        color: #22eebb;/*0082e6*/
     }
     #check:checked ~ ul{
         left: 0;
     }
+    .main-text{
+        margin: inherit;
+    }
+
 }
 @media (max-width: 400px){
     label.logo{
         font-size: 30px;
-        padding-left: 20px;
+        margin-left: 20px;
+        padding-left: 0;
     }
 }
 @media (max-width: 360px){
     label.logo{
         font-size: 30px;
-        padding-left: 20px;
+        margin-left: 10px;
+        padding-left: 0;
+    }
+    label.checkbtn{
+        margin-right: 10px;
+        padding-right: 0;
+    }
+}
+@media (max-width: 320px){
+    label.logo{
+        font-size: 30px;
+        margin-left: 10px;
+        padding-left: 0;
+        margin-right: 5px;
+        padding-right: 5px;
+    }
+    label.checkbtn{
+        margin-right: 10px;
+        padding-right: 0;
     }
 }
