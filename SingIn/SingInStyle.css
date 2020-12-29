@@ -207,7 +207,7 @@ form.validate-error{
         border-radius: 5px;
     }
     form .input-block label {
-        font-size: 12px;
+        font-size: 16px;
         color: rgb(24, 23, 27);
     }
     form .btn-login {
