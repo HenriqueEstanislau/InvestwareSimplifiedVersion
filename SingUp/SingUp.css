@@ -78,6 +78,16 @@ form .btn-singup:hover{
     background-color: #29fcc7;
     color: white;
 }
+
+form .div-alert{
+    font-size: 16px;
+    color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 .text-bottom{
     margin-top: 90px;
 }
