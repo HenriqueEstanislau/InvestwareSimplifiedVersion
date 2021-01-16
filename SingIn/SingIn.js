@@ -8,6 +8,13 @@ btnLogin.addEventListener("click", event => {
         if(field.value === "") form.classList.add("validate-error")
     });
     const formError = document.querySelector(".validate-error");
+    
+    var usuario = window.localStorage.getItem("usuario")
+    var senha = window.localStorage.getItem("senha")
+    var usuarioSingIn = document.getElementById("login-user").value
+    var senhaSingIn = document.getElementById("login-password").value
+    
+
     if(formError){
         formError.addEventListener("animationend", (event) =>{
             if (event.animationName === "nono"){
@@ -15,7 +22,10 @@ btnLogin.addEventListener("click", event => {
             }
         })
     } else {
-        form.classList.add("form-hide");
+        if ((usuarioSingIn == usuario) && (senhaSingIn == senha)){
+            form.classList.add("form-hide");
+            window.location.href = "../Index/Index.html"
+        }
     }
     
 });
